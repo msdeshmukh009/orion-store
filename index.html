@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://orion-ui.netlify.app/components/orion-ui.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <title>Orion store</title>
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <nav class="nav">
+      <header class="nav-header">
+        <a class="nav-heading" href="index.html"><h2>Orion</h2></a>
+      </header>
+
+      <div class="nav-search-bar">
+        <button class="btn"><i class="fas fa-search"></i></button>
+        <input class="form-field" type="text" placeholder="search" />
+      </div>
+
+      <ul class="inline-style-list no-style-list nav-list">
+        <li>
+          <a class="anchor-tag-badge-container" href="#">
+            <span class="badge-container">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="status-badge number-badge">3</span>
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a class="anchor-tag-badge-container" href="#">
+            <span class="badge-container">
+              <i class="fas fa-heart"></i>
+              <span class="status-badge number-badge">3</span>
+            </span>
+          </a>
+        </li>
+
+        <li><button class="btn btn-primary">Login</button></li>
+      </ul>
+    </nav>
+    <!-- --------------------------- -->
+
+    <!-- banner -->
+    <div class="banner">
+      <div class="banner-content">
+        <h2 class="banner-heading">The orion store</h2>
+        <p class="banner-sub-heading">Lorem ipsum dolor sit amet Lorem, ipsum dolor.</p>
+        <div class="banner-cta">
+          <a class="btn btn-primary">Shop now</a>
+          <a href="#categories" class="btn btn-outline-primary">Categories</a>
+        </div>
+      </div>
+    </div>
+    <!-- --------------------------- -->
+
+    <!-- category-section -->
+    <section class="text-center" id="categories">
+      <h1 class="section-heading">Categories</h1>
+      <hr class="title-hr" />
+
+      <div class="category-grid">
+        <div class="category card text-card">
+          <div class="overlay-container">
+            <h2 class="overlay-text text-bolder">Coffee Mugs</h2>
+          </div>
+          <img src="/assets/curiosity-mug.webp" alt="" />
+        </div>
+
+        <div class="category card text-card">
+          <div class="overlay-container">
+            <h2 class="overlay-text text-bolder">Posters</h2>
+          </div>
+          <img src="/assets/posters.webp" alt="" />
+        </div>
+
+        <div class="category card text-card">
+          <div class="overlay-container">
+            <h2 class="overlay-text text-bolder">T-shirts</h2>
+          </div>
+          <img src="/assets/ts.jpg" alt="" />
+        </div>
+
+        <div class="category card text-card">
+          <div class="overlay-container">
+            <h2 class="overlay-text text-bolder">Accessories</h2>
+          </div>
+          <img src="/assets/accs.webp" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------- -->
+
+    <!-- featured-products -->
+    <section class="text-center">
+      <h1 class="section-heading">Featured Products</h1>
+      <hr class="title-hr" />
+
+      <div class="grid-50-50 featured-products">
+        <div class="card horizontal-card">
+          <span class="card-badge">New</span>
+
+          <div class="card-image-container">
+            <img class="responsive-img rounded-top-corner-img" src="/assets/curiosity-mug-card-img.webp" alt="card-img" />
+          </div>
+          <div class="card-info-container">
+            <div class="card__titles">
+              <h3 class="card-heading">Curiosity Rover 11 oz Ceramic Mug</h3>
+              <h2 class="card-sub-heading">₹ 2,317</h2>
+            </div>
+            <div class="card-paragrph">Astronomy Gifts, NASA Rover Mug, Engineering Gifts.</div>
+            <div class="card-call-to-action">
+              <button class="btn btn-primary">Buy now</button>
+              <button class="btn btn-secondary"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card horizontal-card">
+          <span class="card-badge">New</span>
+
+          <div class="card-image-container">
+            <img class="responsive-img rounded-top-corner-img" src="/assets/accs-card-img.jpg" alt="card-img" />
+          </div>
+          <div class="card-info-container">
+            <div class="card__titles">
+              <h3 class="card-heading">60 Years of Space Exploration in Pasadena, CA</h3>
+              <h2 class="card-sub-heading">₹ 2,235</h2>
+            </div>
+            <div class="card-paragrph">Astronomy Gifts, NASA Rover Mug, Engineering Gifts.</div>
+            <div class="card-call-to-action">
+              <button class="btn btn-primary">Buy now</button>
+              <button class="btn btn-secondary"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card horizontal-card">
+          <span class="card-badge">New</span>
+
+          <div class="card-image-container">
+            <img class="responsive-img rounded-top-corner-img" src="/assets/ts-card-img.webp" alt="card-img" />
+          </div>
+          <div class="card-info-container">
+            <div class="card__titles">
+              <h3 class="card-heading">Orion Constellation Unisex Shirt Orion Nebula Hunter t-shirt</h3>
+              <h2 class="card-sub-heading">₹ 2,433</h2>
+            </div>
+            <div class="card-paragrph">Eco Friendly Star Constellation Shirt Gift Idea Orion Belt Milky Way</div>
+            <div class="card-call-to-action">
+              <button class="btn btn-primary">Buy now</button>
+              <button class="btn btn-secondary"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card horizontal-card">
+          <span class="card-badge">New</span>
+
+          <div class="card-image-container">
+            <img class="responsive-img rounded-top-corner-img" src="/assets/acc-card-img-2.jpg" alt="card-img" />
+          </div>
+          <div class="card-info-container">
+            <div class="card__titles">
+              <h3 class="card-heading">Orion Necklace | Gold Orion's Belt Charm</h3>
+              <h2 class="card-sub-heading">₹ 2,317</h2>
+            </div>
+            <div class="card-paragrph">Star Necklace | Gold Orion Jewelry | Constellation Necklace | E Ria Designs</div>
+            <div class="card-call-to-action">
+              <button class="btn btn-primary">Buy now</button>
+              <button class="btn btn-secondary"><i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------- -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="inline-style-list no-style-list footer-list">
+        <li>
+          <a class="footer-links" href="https://github.com/msdeshmukh009" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a class="footer-links" href="https://twitter.com/msdeshmukh09" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a class="footer-links" href="https://www.linkedin.com/in/mahesh-deshmukh-413830185/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+      <p>© 2022 Orion store</p>
+    </footer>
+    <!-- --------------------------- -->
+
+    <a href="" class="btn-floating btn-primary floating-up-arrow-btn">
+      <i class="fas fa-arrow-up" style="user-select: auto"></i>
+    </a>
+  </body>
+</html>
