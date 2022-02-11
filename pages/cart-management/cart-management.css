@@ -1,0 +1,66 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--xl-space);
+  padding: var(--lg-space);
+}
+.cart {
+  display: flex;
+  row-gap: var(--xl-space);
+  column-gap: var(--lg-space);
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+.cart-card,
+.bill-distribution-div {
+  flex: 1 0 300px;
+}
+.cart-cta {
+  margin-top: var(--lg-space);
+}
+.bill-unit {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.block-btn {
+  width: 100%;
+}
+.order-counter {
+  display: flex;
+  column-gap: var(--md-space);
+  width: 100%;
+}
+.counter-btn {
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-info-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--lg-space);
+}
+/*** media-queries ***/
+@media only screen and (max-width: 900px) {
+  .cart {
+    width: 100%;
+  }
+  .bill-distribution-div {
+    width: 100%;
+  }
+  .cart-card {
+    width: 100%;
+  }
+  .order-counter {
+    column-gap: var(--sm-space);
+  }
+}
+/*******/
