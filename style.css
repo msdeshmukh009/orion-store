@@ -7,9 +7,9 @@
 
   /* spacing */
   --sm-space: 0.5rem;
-  --md--space: 1rem;
-  --lg--space: 1.5rem;
-  --xl--space: 2rem;
+  --md-space: 1rem;
+  --lg-space: 1.5rem;
+  --xl-space: 2rem;
   --xxl-space: 2.5rem;
   --xxxl-space: 3rem;
 }
@@ -36,7 +36,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: var(--xl--space);
+  margin-bottom: var(--xl-space);
   position: relative;
   background-image: url(/assets/bg-img3.jpg);
   background-repeat: no-repeat;
@@ -44,11 +44,11 @@
   background-size: cover;
 }
 .banner-content {
-  padding: var(--xl--space);
+  padding: var(--xl-space);
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  row-gap: var(--md--space);
+  row-gap: var(--md-space);
   position: absolute;
   background-color: var(--sidebar-fallback-bg-color);
 }
@@ -70,8 +70,8 @@
 }
 .banner-cta {
   display: flex;
-  column-gap: var(--md--space);
-  row-gap: var(--md--space);
+  column-gap: var(--md-space);
+  row-gap: var(--md-space);
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -124,7 +124,7 @@
 .featured-products {
   width: 90%;
   margin: auto;
-  padding: var(--xl--space);
+  padding: var(--xl-space);
 }
 /*******/
 
