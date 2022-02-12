@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://orion-ui.netlify.app/components/orion-ui.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="cart-management.css" />
+    <title>Cart</title>
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <nav class="nav">
+      <header class="nav-header">
+        <a class="nav-heading" href="/index.html"><h2>Orion</h2></a>
+      </header>
+
+      <div class="nav-search-bar">
+        <button class="btn"><i class="fas fa-search"></i></button>
+        <input class="form-field" type="text" placeholder="search" />
+      </div>
+
+      <ul class="inline-style-list no-style-list nav-list">
+        <li>
+          <a class="anchor-tag-badge-container" href="#">
+            <span class="badge-container">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="status-badge number-badge">3</span>
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a class="anchor-tag-badge-container" href="#">
+            <span class="badge-container">
+              <i class="fas fa-heart"></i>
+              <span class="status-badge number-badge">3</span>
+            </span>
+          </a>
+        </li>
+
+        <li><button class="btn btn-primary">Login</button></li>
+      </ul>
+    </nav>
+    <!-- --------------------------- -->
+
+    <!-- cart -->
+    <div class="cart-container">
+      <h2 class="text-center">My Cart(4)</h2>
+
+      <div class="cart">
+        <!-- cart-cards -->
+        <div class="cart-cards">
+          <div class="card horizontal-card">
+            <div class="card-image-container">
+              <img class="responsive-img rounded-top-corner-img" src="/assets/curiosity-mug-card-img.webp" alt="card-img" />
+            </div>
+            <div class="card-info-container">
+              <div class="card__titles">
+                <h3 class="card-heading">Curiosity Rover 11 oz Ceramic Mug</h3>
+                <h2 class="card-sub-heading">₹ 1317 <span class="text-line-through text-gray text-md">₹ 2,317</span></h2>
+              </div>
+              <div class="order-counter">
+                <p>Quantity:</p>
+                <button class="counter-btn">-</button>
+                <input class="quantity-input" type="number" value="2" />
+                <button class="counter-btn">+</button>
+              </div>
+              <div class="card-call-to-action">
+                <button class="btn btn-secondary block-btn">Remove form cart</button>
+                <button class="btn btn-outline-secondary block-btn">Move to wishlist</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card horizontal-card">
+            <div class="card-image-container">
+              <img class="responsive-img rounded-top-corner-img" src="/assets/accs-card-img.jpg" alt="card-img" />
+            </div>
+            <div class="card-info-container">
+              <div class="card__titles">
+                <h3 class="card-heading">60 Years of Space Exploration in Pasadena, CA</h3>
+                <h2 class="card-sub-heading">₹ 1235 <span class="text-line-through text-gray text-md">₹ 2,235</span></h2>
+              </div>
+              <div class="order-counter">
+                <p>Quantity:</p>
+                <button class="counter-btn">-</button>
+                <input class="quantity-input" type="number" value="2" />
+                <button class="counter-btn">+</button>
+              </div>
+              <div class="card-call-to-action">
+                <button class="btn btn-secondary block-btn">Remove form cart</button>
+                <button class="btn btn-outline-secondary block-btn">Move to wishlist</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- --------------------------- -->
+
+        <!-- bill-distribution -->
+        <div class="bill-distribution-div">
+          <h3>Price Details</h3>
+          <hr />
+          <div class="bill">
+            <div class="bill-unit">
+              <p>Price(4 items)</p>
+              <p>₹ 9104</p>
+            </div>
+            <div class="bill-unit">
+              <p>Discount</p>
+              <p>-₹ 4000</p>
+            </div>
+            <div class="bill-unit">
+              <p>Delivery charges</p>
+              <p>₹ 300</p>
+            </div>
+          </div>
+          <hr />
+          <div class="bill-unit">
+            <h3>Total Amount</h3>
+            <h3>₹ 5404</h3>
+          </div>
+          <hr />
+          <p>You will save ₹ 1000 on this order.</p>
+          <div class="cart-cta">
+            <button class="btn btn-primary block-btn">Place Order</button>
+          </div>
+        </div>
+        <!-- --------------------------- -->
+      </div>
+    </div>
+    <!-- --------------------------- -->
+  </body>
+</html>
