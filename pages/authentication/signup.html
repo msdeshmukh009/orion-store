@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://orion-ui.netlify.app/components/orion-ui.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="authentication.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <title>Signup</title>
+  </head>
+  <body>
+    <!-- nav-bar -->
+    <nav class="nav">
+      <header class="nav-header">
+        <a class="nav-heading" href="/index.html"><h2>Orion</h2></a>
+      </header>
+
+      <div class="nav-search-bar">
+        <button class="btn"><i class="fas fa-search"></i></button>
+        <input class="form-field" type="text" placeholder="search" />
+      </div>
+
+      <ul class="inline-style-list no-style-list nav-list">
+        <li>
+          <a class="anchor-tag-badge-container" href="/pages/cart-management/cart-management.html">
+            <span class="badge-container">
+              <i class="fas fa-shopping-cart"></i>
+              <span class="status-badge number-badge">3</span>
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a class="anchor-tag-badge-container" href="#">
+            <span class="badge-container">
+              <i class="fas fa-heart"></i>
+              <span class="status-badge number-badge">3</span>
+            </span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/pages/authentication/signin.html" class="btn btn-primary">Login</a>
+        </li>
+
+        <li>
+          <a class="btn btn-outline-primary" href="#">
+            <i class="fas fa-sign-out"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- --------------------------- -->
+
+    <!-- signup-form -->
+    <div class="form-container">
+      <form class="form-grp">
+        <h2 class="form-heading">Signup</h2>
+        <div class="input-grp">
+          <label class="form-label form-label-required">Email</label>
+          <input class="form-field" type="email" placeholder="example@xyz.com" />
+        </div>
+
+        <div class="input-grp">
+          <label class="form-label form-label-required">Username</label>
+          <input class="form-field" type="text" />
+        </div>
+
+        <div class="input-grp">
+          <label class="form-label form-label-required">Password</label>
+          <input class="form-field" type="password" placeholder="********" />
+        </div>
+
+        <div class="input-grp">
+          <label class="form-label form-label-required">Confirm password</label>
+          <input class="form-field" type="password" placeholder="********" />
+        </div>
+
+        <div class="options">
+          <label class="form-label" for="agreement"><input type="checkbox" name="agreement" />I agree to all Terms & Conditions</label>
+        </div>
+
+        <button class="btn btn-primary btn-submit">Create new account</button>
+
+        <div class="redirect-link text-center">
+          <a class="link-btn" href="signin.html">Already have an account <i class="fas fa-chevron-right"></i></a>
+        </div>
+      </form>
+    </div>
+    <!-- --------------------------- -->
+  </body>
+</html>
