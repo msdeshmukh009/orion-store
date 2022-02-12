@@ -13,7 +13,11 @@
   justify-content: center;
   width: 80%;
 }
-.cart-card,
+.cart-cards {
+  flex: 1 0 300px;
+  flex-direction: column;
+  row-gap: var(--lg-space);
+}
 .bill-distribution-div {
   flex: 1 0 300px;
 }
@@ -32,6 +36,10 @@
   display: flex;
   column-gap: var(--md-space);
   width: 100%;
+}
+.quantity-input {
+  width: 30px;
+  height: 30px;
 }
 .counter-btn {
   background-color: var(--secondary-color);
