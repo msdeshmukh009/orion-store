@@ -110,8 +110,8 @@
   transition: 0.2s ease-in;
 }
 .category {
-  height: 10rem;
-  width: 20rem;
+  height: 160px;
+  width: 320px;
   max-width: 300px;
   cursor: pointer;
 }
@@ -155,6 +155,9 @@
   }
 }
 @media only screen and (max-width: 650px) {
+  html {
+    font-size: 12px;
+  }
   .category-grid {
     grid-template-columns: 1fr;
   }

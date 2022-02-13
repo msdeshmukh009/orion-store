@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://orion-ui.netlify.app/components/orion-ui.css" />
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="products.css" />
+    <link rel="stylesheet" href="wishlist.css" />
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-    <title>Orion Products</title>
+    <title>Wishlist</title>
   </head>
   <body>
     <div class="grid-container">
@@ -36,7 +36,7 @@
           </li>
 
           <li>
-            <a class="anchor-tag-badge-container" href="/pages/wishlist/wishlist.html">
+            <a class="anchor-tag-badge-container" href="#">
               <span class="badge-container">
                 <i class="fas fa-heart"></i>
                 <span class="status-badge number-badge">3</span>
@@ -57,48 +57,13 @@
       </nav>
       <!-- --------------------------- -->
 
-      <!-- filters -->
-      <section class="filters" id="filters">
-        <button class="filter-close-btn" id="filter-close-btn">
-          <span class="btn-icon"><i class="fas fa-times"></i></span>
-        </button>
-        <div class="filter-title">
-          <h3>Filters</h3>
-          <button class="link-btn" href="#">Clear</button>
-        </div>
-        <ul class="no-style-list styled-list filter-list">
-          <li class="text-bold">Price</li>
-          <li><input type="radio" name="price" />Price-high to low</li>
-          <li><input type="radio" name="price" />Price-low to high</li>
-          <hr class="divider-hr" />
-          <li class="text-bold">Categories</li>
-          <li><input type="checkbox" name="category" id="" />Coffee Mugs</li>
-          <li><input type="checkbox" name="category" id="" />Posters</li>
-          <li><input type="checkbox" name="category" id="" />T-shirts</li>
-          <li><input type="checkbox" name="category" id="" />Accessories</li>
-          <hr class="divider-hr" />
-          <li class="text-bold">Rating</li>
-          <li><input type="radio" name="rating" id="" />4 stars and above</li>
-          <li><input type="radio" name="rating" id="" />3 stars and above</li>
-          <li><input type="radio" name="rating" id="" />2 stars and above</li>
-          <li><input type="radio" name="rating" id="" />1 stars and above</li>
-        </ul>
-      </section>
-      <!-- --------------------------- -->
-
       <!-- products -->
       <div class="products">
-        <!-- filter-button -->
-        <div class="filter-button-div">
-          <button class="btn btn-outline-primary filter-button" id="show-filter-btn">
-            <span class="btn-icon"><i class="fas fa-sliders-h"></i></span>Filters
-          </button>
-        </div>
-        <!-- --------------------------- -->
-
+        <h1 class="text-center">My Wishlist</h1>
         <!-- main-products -->
         <main class="main-products">
           <div class="card vertical-card">
+            <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
             <div class="card-image-container">
               <img class="responsive-img rounded-top-corner-img" src="/assets/curiosity-mug-card-img.webp" alt="card-img" />
             </div>
@@ -116,6 +81,7 @@
           </div>
 
           <div class="card vertical-card">
+            <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
             <div class="card-image-container">
               <img class="responsive-img rounded-top-corner-img" src="/assets/acc-card-img-2.jpg" alt="card-img" />
             </div>
@@ -133,6 +99,7 @@
           </div>
 
           <div class="card vertical-card">
+            <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
             <div class="card-image-container">
               <img class="responsive-img rounded-top-corner-img" src="/assets/ts-card-img.webp" alt="card-img" />
             </div>
@@ -143,6 +110,7 @@
               </div>
             </div>
             <div class="card-call-to-action">
+              <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
               <button class="btn btn-primary block-btn">
                 <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span> Add to cart
               </button>
@@ -150,6 +118,7 @@
           </div>
 
           <div class="card vertical-card">
+            <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
             <div class="card-image-container">
               <img class="responsive-img rounded-top-corner-img" src="/assets/painting-card-img.jpg" alt="card-img" />
             </div>
@@ -167,6 +136,7 @@
           </div>
 
           <div class="card vertical-card">
+            <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
             <div class="card-image-container">
               <img class="responsive-img rounded-top-corner-img" src="/assets/accs-card-img.jpg" alt="card-img" />
             </div>
