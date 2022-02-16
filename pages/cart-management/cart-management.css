@@ -29,9 +29,7 @@
   width: 100%;
   justify-content: space-between;
 }
-.block-btn {
-  width: 100%;
-}
+
 .order-counter {
   display: flex;
   column-gap: var(--md-space);
@@ -51,7 +49,7 @@
   justify-content: center;
   align-items: center;
 }
-.card-info-container {
+.cart-cards .horizontal-card-content .card-info-container {
   display: flex;
   flex-direction: column;
   row-gap: var(--lg-space);
