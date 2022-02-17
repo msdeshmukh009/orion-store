@@ -45,9 +45,6 @@
   border-radius: 50%;
   height: 20px;
   width: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .cart-cards .horizontal-card-content .card-info-container {
   display: flex;
