@@ -1,17 +1,10 @@
+@import url(/pages/authentication/authentication.css);
+@import url(/pages/cart-management/cart-management.css);
+@import url(/pages/wishlist/wishlist.css);
+@import url(/pages/product-listing/products.css);
 :root {
   /* colors */
   --banner-bg-color: rgba(255, 255, 255, 0.301);
-
-  /* font-family */
-  --font-family-ultra: "ultraregular", sans-serif;
-
-  /* spacing */
-  --sm-space: 0.5rem;
-  --md-space: 1rem;
-  --lg-space: 1.5rem;
-  --xl-space: 2rem;
-  --xxl-space: 2.5rem;
-  --xxxl-space: 3rem;
 }
 @font-face {
   font-family: "ultraregular";
@@ -33,9 +26,6 @@
 /*** banner ***/
 .banner {
   height: calc(100vh - 5.5rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: var(--xl-space);
   position: relative;
   background-image: url(/assets/bg-img3.jpg);
@@ -46,8 +36,6 @@
 .banner-content {
   padding: var(--xl-space);
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
   row-gap: var(--md-space);
   position: absolute;
   background-color: var(--sidebar-fallback-bg-color);
@@ -69,12 +57,9 @@
   font-size: 1.3rem;
 }
 .banner-cta {
-  display: flex;
   column-gap: var(--md-space);
   row-gap: var(--md-space);
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
 }
 /*******
 
@@ -89,19 +74,18 @@
   height: 0;
 }
 .category-grid {
-  padding: 3rem 2rem;
+  padding: var(--xxxl-space) var(--xl-space);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: var(--sm-space);
   justify-items: center;
   align-items: center;
-}
-.card {
-  width: fit-content;
+  max-width: 1500px;
+  margin: auto;
 }
 .overlay-text {
   font-size: 1.2rem;
-  padding: 0.5rem;
+  padding: var(--sm-space);
   border-radius: 5px;
 }
 .overlay-container:hover {
@@ -125,6 +109,8 @@
   width: 90%;
   margin: auto;
   padding: var(--xl-space);
+  max-width: 1500px;
+  margin: auto;
 }
 /*******/
 
@@ -138,7 +124,7 @@
   align-items: center;
 }
 .footer-list {
-  column-gap: 2rem;
+  column-gap: var(--xl-space);
   color: var(--primary-color);
   font-size: 1.5rem;
 }
@@ -156,7 +142,7 @@
 }
 @media only screen and (max-width: 650px) {
   html {
-    font-size: 12px;
+    font-size: 80%;
   }
   .category-grid {
     grid-template-columns: 1fr;

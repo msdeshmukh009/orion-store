@@ -1,41 +1,6 @@
 /*** form-container ***/
 .form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: var(--lg-space);
   padding: var(--xl-space);
-}
-.form-grp {
-  box-shadow: var(--card-shadow);
-}
-/*******/
-/*** options ***/
-.options {
-  display: flex;
-  justify-content: space-between;
-}
-/*******/
-
-/*** redirect-link ***/
-.redirect-link {
-  margin-top: var(--lg-space);
-}
-/*******/
-
-/*** links ***/
-.link {
-  text-decoration: none;
-}
-.link:hover {
-  opacity: 0.5;
-}
-.link-btn {
-  width: 70%;
-  margin: auto;
-  display: flex;
-  column-gap: var(--lg-space);
-  align-items: center;
-  border: none;
 }
 /*******/

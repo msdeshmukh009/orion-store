@@ -8,12 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://orion-ui.netlify.app/components/orion-ui.css" />
     <link rel="stylesheet" href="/style.css" />
-    <link rel="stylesheet" href="wishlist.css" />
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
     <title>Wishlist</title>
   </head>
   <body>
-    <div class="grid-container">
+    <div class="wishlist-grid-container">
       <!-- nav-bar -->
       <nav class="nav">
         <header class="nav-header">
@@ -30,7 +29,7 @@
             <a class="anchor-tag-badge-container" href="/pages/cart-management/cart-management.html">
               <span class="badge-container">
                 <i class="fas fa-shopping-cart"></i>
-                <span class="status-badge number-badge">3</span>
+                <span class="status-badge number-badge flex-total-center">3</span>
               </span>
             </a>
           </li>
@@ -39,7 +38,7 @@
             <a class="anchor-tag-badge-container" href="#">
               <span class="badge-container">
                 <i class="fas fa-heart"></i>
-                <span class="status-badge number-badge">3</span>
+                <span class="status-badge number-badge flex-total-center">3</span>
               </span>
             </a>
           </li>
@@ -58,22 +57,23 @@
       <!-- --------------------------- -->
 
       <!-- products -->
-      <div class="products">
+      <div class="wishlist-products flex-column">
         <h1 class="text-center">My Wishlist</h1>
         <!-- main-products -->
-        <main class="main-products">
+        <main class="wishlist-main-products">
           <div class="card vertical-card">
-            <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
+            <button class="card-wishlist-btn card-wishlist-btn-clicked"><i class="fas fa-heart-circle"></i></button>
             <div class="card-image-container">
               <img class="responsive-img rounded-top-corner-img" src="/assets/curiosity-mug-card-img.webp" alt="card-img" />
             </div>
             <div class="card-info-container">
-              <div class="card__titles">
-                <h3 class="card-heading">Curiosity Rover 11 oz Ceramic Mug</h3>
-                <h2 class="card-sub-heading">₹ 2,317</h2>
+              <span class="text-bold card-heading">CognitiveSurplus</span>
+              <span class="card-sub-heading text-gray">Curiosity Rover 11 oz Ceramic Mug </span>
+              <div class="price">
+                <span class="card-sub-heading text-md">₹ 1317 </span><span class="text-line-through text-xs text-gray">₹ 2,317</span>
               </div>
             </div>
-            <div class="card-call-to-action">
+            <div class="card-cta-vertical">
               <button class="btn btn-primary block-btn">
                 <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span> Add to cart
               </button>
@@ -81,72 +81,104 @@
           </div>
 
           <div class="card vertical-card">
-            <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
-            <div class="card-image-container">
-              <img class="responsive-img rounded-top-corner-img" src="/assets/acc-card-img-2.jpg" alt="card-img" />
-            </div>
-            <div class="card-info-container">
-              <div class="card__titles">
-                <h3 class="card-heading">Orion Necklace | Gold Orion's Belt Charm</h3>
-                <h2 class="card-sub-heading">₹ 2,317</h2>
-              </div>
-            </div>
-            <div class="card-call-to-action">
-              <button class="btn btn-primary block-btn">
-                <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span> Add to cart
-              </button>
-            </div>
-          </div>
-
-          <div class="card vertical-card">
-            <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
-            <div class="card-image-container">
-              <img class="responsive-img rounded-top-corner-img" src="/assets/ts-card-img.webp" alt="card-img" />
-            </div>
-            <div class="card-info-container">
-              <div class="card__titles">
-                <h3 class="card-heading">Orion Constellation Unisex Shirt Orion Nebula Hunter t-shirt</h3>
-                <h2 class="card-sub-heading">₹ 2,433</h2>
-              </div>
-            </div>
-            <div class="card-call-to-action">
-              <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
-              <button class="btn btn-primary block-btn">
-                <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span> Add to cart
-              </button>
-            </div>
-          </div>
-
-          <div class="card vertical-card">
-            <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
-            <div class="card-image-container">
-              <img class="responsive-img rounded-top-corner-img" src="/assets/painting-card-img.jpg" alt="card-img" />
-            </div>
-            <div class="card-info-container">
-              <div class="card__titles">
-                <h3 class="card-heading">Orion, Astronomy Print Of Orion Constellation In The Night Sky</h3>
-                <h2 class="card-sub-heading">₹ 2,235</h2>
-              </div>
-            </div>
-            <div class="card-call-to-action">
-              <button class="btn btn-primary block-btn">
-                <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span> Add to cart
-              </button>
-            </div>
-          </div>
-
-          <div class="card vertical-card">
-            <button class="card-wishlist-btn"><i class="fas fa-heart-circle"></i></button>
+            <button class="card-wishlist-btn card-wishlist-btn-clicked"><i class="fas fa-heart-circle"></i></button>
             <div class="card-image-container">
               <img class="responsive-img rounded-top-corner-img" src="/assets/accs-card-img.jpg" alt="card-img" />
             </div>
             <div class="card-info-container">
-              <div class="card__titles">
-                <h3 class="card-heading">60 Years of Space Exploration in Pasadena, CA</h3>
-                <h2 class="card-sub-heading">₹ 2,235</h2>
+              <span class="text-bold card-heading">Chopshopstore</span>
+              <span class="card-sub-heading text-gray">60 Years of Space Exploration in Pasadena, CA </span>
+              <div class="price">
+                <span class="card-sub-heading text-md">₹ 1235 </span><span class="text-line-through text-xs text-gray">₹ 2,235</span>
               </div>
             </div>
-            <div class="card-call-to-action">
+            <div class="card-cta-vertical">
+              <button class="btn btn-primary block-btn">
+                <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span> Add to cart
+              </button>
+            </div>
+          </div>
+
+          <div class="card vertical-card">
+            <button class="card-wishlist-btn card-wishlist-btn-clicked"><i class="fas fa-heart-circle"></i></button>
+            <div class="card-image-container">
+              <img class="responsive-img rounded-top-corner-img" src="/assets/acc-card-img-2.jpg" alt="card-img" />
+            </div>
+            <div class="card-info-container">
+              <span class="text-bold card-heading">Eriadesignsjewelry</span>
+              <span class="card-sub-heading text-gray"
+                >Orion Necklace | Gold Orion's Belt Charm | Star Necklace | Gold Orion Jewelry | Constellation Necklace | E Ria Designs
+              </span>
+              <div class="price">
+                <span class="card-sub-heading text-md">₹ 3354 </span><span class="text-line-through text-xs text-gray">₹ 4,354+</span>
+              </div>
+            </div>
+            <div class="card-cta-vertical">
+              <button class="btn btn-primary block-btn">
+                <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span> Add to cart
+              </button>
+            </div>
+          </div>
+
+          <div class="card vertical-card">
+            <button class="card-wishlist-btn card-wishlist-btn-clicked"><i class="fas fa-heart-circle"></i></button>
+            <div class="card-image-container">
+              <img class="responsive-img rounded-top-corner-img" src="/assets/ts-card-img.webp" alt="card-img" />
+            </div>
+            <div class="card-info-container">
+              <span class="text-bold card-heading">PrintStopStudio</span>
+              <span class="card-sub-heading text-gray"
+                >Orion Constellation Unisex Shirt Orion Nebula Hunter tshirt Eco Friendly Star Constellation Shirt Gift Idea Orion Belt Milky
+                Way</span
+              >
+              <div class="price">
+                <span class="card-sub-heading text-md">₹ 1425 </span><span class="text-line-through text-xs text-gray">₹ 2,425</span>
+              </div>
+            </div>
+            <div class="card-cta-vertical">
+              <button class="btn btn-primary block-btn">
+                <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span> Add to cart
+              </button>
+            </div>
+          </div>
+
+          <div class="card vertical-card">
+            <button class="card-wishlist-btn card-wishlist-btn-clicked"><i class="fas fa-heart-circle"></i></button>
+            <div class="card-image-container">
+              <img class="responsive-img rounded-top-corner-img" src="/assets/key-chain-card-img.jpg" alt="card-img" />
+            </div>
+            <div class="card-info-container">
+              <span class="text-bold card-heading">EastonWoodworks</span>
+              <span class="card-sub-heading text-gray"
+                >Orion Constellation Keychain - Science Keychain - Astronomy Gift - Astronomy Keychain - Orion Keychain - Orion Nebula
+              </span>
+              <div class="price">
+                <span class="card-sub-heading text-md">₹ 379 </span><span class="text-line-through text-xs text-gray">₹ 679</span>
+              </div>
+            </div>
+            <div class="card-cta-vertical">
+              <button class="btn btn-primary block-btn">
+                <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span> Add to cart
+              </button>
+            </div>
+          </div>
+
+          <div class="card vertical-card">
+            <button class="card-wishlist-btn card-wishlist-btn-clicked"><i class="fas fa-heart-circle"></i></button>
+            <div class="card-image-container">
+              <img class="responsive-img rounded-top-corner-img" src="/assets/painting-card-img.jpg" alt="card-img" />
+            </div>
+            <div class="card-info-container">
+              <span class="text-bold card-heading">KnittedLemonStudio</span>
+              <span class="card-sub-heading text-gray"
+                >Orion, Astronomy Print Of Orion Constellation In The Night Sky, Orion's Belt Star Map, Astronomy Gift, Orion Nebula, Gifts For
+                Stargazers
+              </span>
+              <div class="price">
+                <span class="card-sub-heading text-md">₹ 1000 </span><span class="text-line-through text-xs text-gray">₹ 1,793</span>
+              </div>
+            </div>
+            <div class="card-cta-vertical">
               <button class="btn btn-primary block-btn">
                 <span class="btn-icon"><i class="fas fa-shopping-cart"></i></span> Add to cart
               </button>
@@ -175,7 +207,7 @@
       <!-- --------------------------- -->
     </div>
 
-    <a href="" class="btn-floating btn-primary floating-up-arrow-btn">
+    <a href="#" class="btn-floating btn-primary floating-up-arrow-btn">
       <i class="fas fa-arrow-up" style="user-select: auto"></i>
     </a>
     <script src="products.js"></script>

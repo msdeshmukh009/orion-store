@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://orion-ui.netlify.app/components/orion-ui.css" />
     <link rel="stylesheet" href="/style.css" />
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="cart-management.css" />
     <title>Cart</title>
   </head>
   <body>
@@ -29,7 +28,7 @@
           <a class="anchor-tag-badge-container" href="#">
             <span class="badge-container">
               <i class="fas fa-shopping-cart"></i>
-              <span class="status-badge number-badge">3</span>
+              <span class="status-badge number-badge flex-total-center">3</span>
             </span>
           </a>
         </li>
@@ -38,7 +37,7 @@
           <a class="anchor-tag-badge-container" href="/pages/wishlist/wishlist.html">
             <span class="badge-container">
               <i class="fas fa-heart"></i>
-              <span class="status-badge number-badge">3</span>
+              <span class="status-badge number-badge flex-total-center">3</span>
             </span>
           </a>
         </li>
@@ -67,20 +66,24 @@
             <div class="card-image-container">
               <img class="responsive-img rounded-top-corner-img" src="/assets/curiosity-mug-card-img.webp" alt="card-img" />
             </div>
-            <div class="card-info-container">
-              <div class="card__titles">
-                <h3 class="card-heading">Curiosity Rover 11 oz Ceramic Mug</h3>
-                <h2 class="card-sub-heading">₹ 1317 <span class="text-line-through text-gray text-md">₹ 2,317</span></h2>
+
+            <div class="horizontal-card-content">
+              <div class="card-info-container text-left">
+                <span class="text-bold card-heading">CognitiveSurplus</span>
+                <span class="card-sub-heading text-gray">Curiosity Rover 11 oz Ceramic Mug Lorem ipsum dolor sit amet.</span>
+                <div class="price">
+                  <span class="card-sub-heading text-md">₹ 1,317 </span><span class="text-line-through text-xs text-gray">₹ 2,317</span>
+                </div>
               </div>
-              <div class="order-counter">
-                <p>Quantity:</p>
-                <button class="counter-btn">-</button>
+              <div class="order-counter flex-total-center">
+                <span>Quantity:</span>
+                <button class="counter-btn flex-total-center">-</button>
                 <input class="quantity-input" type="number" value="2" />
-                <button class="counter-btn">+</button>
+                <button class="counter-btn flex-total-center">+</button>
               </div>
-              <div class="card-call-to-action">
-                <button class="btn btn-secondary block-btn">Remove form cart</button>
-                <button class="btn btn-outline-secondary block-btn">Move to wishlist</button>
+              <div class="card-call-to-action-horizontal">
+                <button class="btn btn-secondary block-btn">Remove from cart</button>
+                <button class="btn btn-outline block-btn">Move to wishlist</button>
               </div>
             </div>
           </div>
@@ -89,20 +92,24 @@
             <div class="card-image-container">
               <img class="responsive-img rounded-top-corner-img" src="/assets/accs-card-img.jpg" alt="card-img" />
             </div>
-            <div class="card-info-container">
-              <div class="card__titles">
-                <h3 class="card-heading">60 Years of Space Exploration in Pasadena, CA</h3>
-                <h2 class="card-sub-heading">₹ 1235 <span class="text-line-through text-gray text-md">₹ 2,235</span></h2>
+
+            <div class="horizontal-card-content">
+              <div class="card-info-container text-left">
+                <span class="text-bold card-heading">Chopshopstore</span>
+                <span class="card-sub-heading text-gray">60 Years of Space Exploration in Pasadena, CA</span>
+                <div class="price">
+                  <span class="card-sub-heading text-md">₹ 1,233 </span><span class="text-line-through text-xs text-gray">₹ 2,233</span>
+                </div>
               </div>
-              <div class="order-counter">
-                <p>Quantity:</p>
-                <button class="counter-btn">-</button>
+              <div class="order-counter flex-total-center">
+                <span>Quantity:</span>
+                <button class="counter-btn flex-total-center">-</button>
                 <input class="quantity-input" type="number" value="2" />
-                <button class="counter-btn">+</button>
+                <button class="counter-btn flex-total-center">+</button>
               </div>
-              <div class="card-call-to-action">
-                <button class="btn btn-secondary block-btn">Remove form cart</button>
-                <button class="btn btn-outline-secondary block-btn">Move to wishlist</button>
+              <div class="card-call-to-action-horizontal">
+                <button class="btn btn-secondary block-btn">Remove from cart</button>
+                <button class="btn btn-outline block-btn">Move to wishlist</button>
               </div>
             </div>
           </div>

@@ -117,23 +117,3 @@
   }
 }
 /*******/
-
-/*** card-styles ***/
-/*TODO: Move to CL*/
-.vertical-card {
-  min-height: 28rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.block-btn {
-  width: 100%;
-}
-.card-call-to-action {
-  margin-top: auto;
-}
-.card-info-container {
-  margin: auto auto;
-  width: 100%;
-}
-/******/
