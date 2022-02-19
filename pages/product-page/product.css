@@ -24,13 +24,9 @@
 .product-status-list {
   border: 2px solid var(--secondary-color);
   padding: var(--lg-space);
-  width: 100%;
-}
-.w-15ch {
-  width: 15ch;
+  align-items: baseline;
 }
 .product-cta {
-  width: 100%;
   row-gap: var(--md-space);
 }
 .product-cta .btn {
@@ -43,3 +39,9 @@
     width: 100%;
   }
 }
+/*** utilities ***/
+/*TODO:Move to CL*/
+.w-15ch {
+  width: 15ch;
+}
+/*******/
