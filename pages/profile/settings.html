@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://orion-ui.netlify.app/components/orion-ui.css" />
     <link rel="stylesheet" href="/style.css" />
     <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
-    <title>Signin</title>
+    <title>Settings</title>
   </head>
   <body>
     <!-- nav-bar -->
@@ -25,7 +25,7 @@
 
       <ul class="inline-style-list no-style-list nav-list flex-total-center">
         <li>
-          <a class="anchor-tag-badge-container" href="/pages/cart-management/cart-management.html">
+          <a class="anchor-tag-badge-container" href="../cart-management/cart-management.html">
             <span class="badge-container">
               <i class="fas fa-shopping-cart"></i>
               <span class="status-badge number-badge flex-total-center">3</span>
@@ -43,7 +43,7 @@
         </li>
 
         <li>
-          <a class="btn btn-primary">Login</a>
+          <a href="/pages/authentication/signin.html" class="btn btn-primary">Login</a>
         </li>
 
         <li>
@@ -57,32 +57,44 @@
     </nav>
     <!-- --------------------------- -->
 
-    <!-- login-form -->
-    <div class="form-container flex-total-center">
-      <form class="form-grp">
-        <h2 class="text-center text-lg">Signin</h2>
-        <div class="input-grp">
-          <label class="form-label form-label-required">Email</label>
-          <input class="form-field" type="email" placeholder="example@xyz.com" />
-        </div>
+    <!-- profile -->
+    <main class="profile-container flex-column">
+      <h2 class="text-center">User Profile</h2>
 
-        <div class="input-grp">
-          <label class="form-label form-label-required">Password</label>
-          <input class="form-field" type="password" placeholder="********" />
-        </div>
+      <div class="profile">
+        <ul class="profile-list no-style-list flex-column">
+          <li class="profile-list-item flex-total-center"><a class="profile-links" href="profile.html">Profile</a></li>
+          <li class="profile-list-item flex-total-center"><a class="profile-links" href="orders.html">Orders</a></li>
+          <li class="profile-list-item flex-total-center"><a class="profile-links" href="addresses.html">Addresses</a></li>
+          <li class="profile-list-item flex-total-center"><a class="profile-links profile-active-link" href="settings.html">Settings</a></li>
+        </ul>
 
-        <div class="options">
-          <label class="form-label" for="remember me"><input type="checkbox" name="remember me" />Remember me</label>
-          <a class="link-btn" href="#">Forgot your password?</a>
+        <div class="profile-info flex-column">
+          <h3>Account Settings</h3>
+          <button class="btn btn-primary signout-btn">Signout</button>
         </div>
-
-        <button class="btn btn-primary btn-submit">Login</button>
-
-        <div class="redirect-link text-center">
-          <a class="link-btn" href="signup.html">Create new account&nbsp;&nbsp;<i class="fas fa-chevron-right"></i></a>
-        </div>
-      </form>
-    </div>
+      </div>
+    </main>
     <!-- --------------------------- -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <ul class="inline-style-list no-style-list footer-list">
+        <li>
+          <a class="footer-links" href="https://github.com/msdeshmukh009" target="_blank"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a class="footer-links" href="https://twitter.com/msdeshmukh09" target="_blank"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li>
+          <a class="footer-links" href="https://www.linkedin.com/in/mahesh-deshmukh-413830185/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+      <p>© 2022 Orion store</p>
+    </footer>
+    <!-- --------------------------- -->
+    <a href="#" class="btn-floating btn-primary floating-up-arrow-btn">
+      <i class="fas fa-arrow-up" style="user-select: auto"></i>
+    </a>
   </body>
 </html>
