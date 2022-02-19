@@ -69,6 +69,10 @@
   gap: var(--sm-space);
   position: relative;
 }
+.product-link {
+  text-decoration: none;
+  color: inherit;
+}
 /*******/
 
 /*** footer ***/
