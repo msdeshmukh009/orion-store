@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://orion-ui.netlify.app/components/orion-ui.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/pages/product-listing/products.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <title>Orion store</title>
+  </head>
+  <body>
+    <div>
+      <!-- nav-bar -->
+      <nav class="nav">
+        <header class="nav-header">
+          <a class="nav-heading" href="/index.html"><h2>Orion</h2></a>
+        </header>
+
+        <div class="nav-search-bar">
+          <button class="btn"><i class="fas fa-search"></i></button>
+          <input class="form-field" type="text" placeholder="search" />
+        </div>
+
+        <ul class="inline-style-list no-style-list nav-list flex-total-center">
+          <li>
+            <a class="anchor-tag-badge-container" href="/pages/cart-management/cart-management.html">
+              <span class="badge-container">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="status-badge number-badge flex-total-center">3</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a class="anchor-tag-badge-container" href="/pages/wishlist/wishlist.html">
+              <span class="badge-container">
+                <i class="fas fa-heart"></i>
+                <span class="status-badge number-badge flex-total-center">3</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/pages/authentication/signin.html" class="btn btn-primary">Login</a>
+          </li>
+
+          <li>
+            <a href="/pages/profile/profile.html">
+              <div class="avatar avatar-sm-size">
+                <img class="responsive-img rounded-img" src="https://avatars.dicebear.com/api/avataaars/qwerasxqergdsacssfghvsd.svg" alt="avatar" />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- --------------------------- -->
+
+      <!-- product -->
+      <main class="main-product grid-50-50" style="margin: 1rem auto; border-radius: 0.3rem">
+        <div class="product-img-container">
+          <img class="responsive-img" src="/assets/product-hero-img.jpg" alt="coffee mug" />
+        </div>
+
+        <div class="product-content flex-column">
+          <div class="product-info flex-column">
+            <div>
+              <h2>Curiosity Rover 11 oz Ceramic Mug | Astronomy Gifts, NASA Rover Mug, Engineering Gifts</h2>
+              <span>CognitiveSurplus</span>
+            </div>
+
+            <div class="rating-field-container">
+              <i class="fas fa-star rating-star-icon colored-star"></i>
+              <i class="fas fa-star rating-star-icon colored-star"></i>
+              <i class="fas fa-star rating-star-icon colored-star"></i>
+              <i class="fas fa-star rating-star-icon colored-star"></i>
+              <i class="fas fa-star rating-star-icon"></i>
+            </div>
+
+            <div class="price">
+              <span class="card-sub-heading text-lg">₹ 1317 </span><span class="text-line-through text-xs text-gray">₹ 2,317</span>
+            </div>
+          </div>
+
+          <div class="product-status flex-column">
+            <ul class="product-status-list no-style-list inline-style-list flex-total-center">
+              <li class="flex-column text-center">
+                <i class="text-lg fas fa-truck"></i>
+                <span class="w-15ch text-xs">Fast Delivery Available </span>
+              </li>
+              <li class="flex-column text-center">
+                <i class="text-lg fas fa-check-square"></i>
+                <span class="w-15ch text-xs">Price displayed is inclusive of GST</span>
+              </li>
+              <li class="flex-column text-center">
+                <i class="text-lg fas fa-calendar-check"></i>
+                <span class="w-15ch text-xs">Currently in stock</span>
+              </li>
+            </ul>
+
+            <div class="product-cta flex-column">
+              <button class="btn block-btn btn-primary">Add to cart</button>
+              <button class="btn block-btn btn-outline-primary">Move to wishlist</button>
+            </div>
+
+            <div>
+              <h3>Description</h3>
+              <p>
+                This mug tips its hat to the Curiosity rover, which has been exploring Mars and sending back data since 2012. Let it inspire you to
+                keep asking questions. Stay curious.
+              </p>
+              <p>
+                This sturdy mug holds 11 ounces of caffeinated bliss. It's dishwasher and microwave safe. Each mug ships in a fancy recyclable &
+                collectable Kraft box.
+              </p>
+              <p>
+                Looking for the perfect gift? Our customers say they've given these mugs as teacher gifts, birthday gifts, graduation presents, and
+                more.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- --------------------------- -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <ul class="inline-style-list no-style-list footer-list">
+          <li>
+            <a class="footer-links" href="https://github.com/msdeshmukh009" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a class="footer-links" href="https://twitter.com/msdeshmukh09" target="_blank"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a class="footer-links" href="https://www.linkedin.com/in/mahesh-deshmukh-413830185/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+        <p>© 2022 Orion store</p>
+      </footer>
+      <!-- --------------------------- -->
+    </div>
+
+    <a href="#" class="btn-floating btn-primary floating-up-arrow-btn">
+      <i class="fas fa-arrow-up" style="user-select: auto"></i>
+    </a>
+    <script src="products.js"></script>
+  </body>
+</html>
