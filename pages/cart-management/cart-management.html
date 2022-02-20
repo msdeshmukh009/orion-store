@@ -118,8 +118,33 @@
         </div>
         <!-- --------------------------- -->
 
+        <!-- coupon-modal-box -->
+        <div class="modal-background">
+          <div class="dialog-box">
+            <button class="modal-close-btn modal-action-btn"><i class="fas fa-times"></i></button>
+            <div class="dialog-header">
+              <h3>Enter coupon code</h3>
+            </div>
+            <div class="dialog-body flex-total-center">
+              <div class="input-grp">
+                <input class="form-field" type="text" />
+              </div>
+            </div>
+            <div class="dialog-cta">
+              <button class="btn btn-primary block-btn">Continue</button>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------- -->
+
         <!-- bill-distribution -->
         <div class="bill-distribution-div">
+          <div class="coupon">
+            <h3>Coupons</h3>
+            <button class="btn btn-outline block-btn coupon-btn" id="couponBtn">
+              Coupons<i class="fas fa-tag text-secondary-color text-bold"></i>
+            </button>
+          </div>
           <h3>Price Details</h3>
           <hr />
           <div class="bill">
@@ -151,5 +176,6 @@
       </div>
     </div>
     <!-- --------------------------- -->
+    <script src="cart.js"></script>
   </body>
 </html>
