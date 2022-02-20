@@ -4,9 +4,10 @@
 @import url(/pages/product-listing/products.css);
 @import url(/pages/profile/profile.css);
 @import url(/pages/product-page/product.css);
+@import url(/pages/loading/loading.css);
 :root {
   /* colors */
-  --banner-bg-color: rgba(255, 255, 255, 0.301);
+  --banner-bg-color: hsla(0, 0%, 100%, 0.301);
 }
 @font-face {
   font-family: "ultraregular";
