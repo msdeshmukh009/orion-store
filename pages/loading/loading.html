@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://orion-ui.netlify.app/components/orion-ui.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/pages/product-listing/products.css" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+    <title>Orion Products</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- nav-bar -->
+      <nav class="nav">
+        <header class="nav-header">
+          <a class="nav-heading" href="/index.html"><h2>Orion</h2></a>
+        </header>
+
+        <div class="nav-search-bar">
+          <button class="btn"><i class="fas fa-search"></i></button>
+          <input class="form-field" type="text" placeholder="search" />
+        </div>
+
+        <ul class="inline-style-list no-style-list nav-list flex-total-center">
+          <li>
+            <a class="anchor-tag-badge-container" href="/pages/cart-management/cart-management.html">
+              <span class="badge-container">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="status-badge number-badge flex-total-center">3</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a class="anchor-tag-badge-container" href="/pages/wishlist/wishlist.html">
+              <span class="badge-container">
+                <i class="fas fa-heart"></i>
+                <span class="status-badge number-badge flex-total-center">3</span>
+              </span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/pages/authentication/signin.html" class="btn btn-primary">Login</a>
+          </li>
+
+          <li>
+            <a href="/pages/profile/profile.html">
+              <div class="avatar avatar-sm-size">
+                <img class="responsive-img rounded-img" src="https://avatars.dicebear.com/api/avataaars/qwerasxqergdsacssfghvsd.svg" alt="avatar" />
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- --------------------------- -->
+
+      <!-- filters -->
+      <section class="filters" id="filters">
+        <button class="filter-close-btn" id="filter-close-btn">
+          <span class="btn-icon"><i class="fas fa-times"></i></span>
+        </button>
+        <div class="filter-title">
+          <h3>Filters</h3>
+          <button class="link-btn" href="#">Clear</button>
+        </div>
+        <ul class="no-style-list styled-list filter-list">
+          <li class="text-bold">Price</li>
+          <li><input type="radio" name="price" />Price-high to low</li>
+          <li><input type="radio" name="price" />Price-low to high</li>
+          <hr class="divider-hr" />
+          <li class="text-bold">Categories</li>
+          <li><input type="checkbox" name="category" id="" />Coffee Mugs</li>
+          <li><input type="checkbox" name="category" id="" />Posters</li>
+          <li><input type="checkbox" name="category" id="" />T-shirts</li>
+          <li><input type="checkbox" name="category" id="" />Accessories</li>
+          <hr class="divider-hr" />
+          <li class="text-bold">Rating</li>
+          <li><input type="radio" name="rating" id="" />4 stars and above</li>
+          <li><input type="radio" name="rating" id="" />3 stars and above</li>
+          <li><input type="radio" name="rating" id="" />2 stars and above</li>
+          <li><input type="radio" name="rating" id="" />1 stars and above</li>
+        </ul>
+      </section>
+      <!-- --------------------------- -->
+
+      <!-- products -->
+      <div class="products">
+        <!-- filter-button -->
+        <div class="filter-button-div">
+          <button class="btn btn-outline-primary filter-button" id="show-filter-btn">
+            <span class="btn-icon"><i class="fas fa-sliders-h"></i></span>Filters
+          </button>
+        </div>
+        <!-- --------------------------- -->
+
+        <!-- main-products -->
+        <div class="flex-total-center loading-container">
+          <div class="loader">
+            <img class="responsive-img" src="/assets/Rolling-1s-200px.svg" alt="loading" />
+          </div>
+        </div>
+        <!-- --------------------------- -->
+      </div>
+      <!-- --------------------------- -->
+
+      <!-- footer -->
+      <footer class="footer">
+        <ul class="inline-style-list no-style-list footer-list">
+          <li>
+            <a class="footer-links" href="https://github.com/msdeshmukh009" target="_blank"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a class="footer-links" href="https://twitter.com/msdeshmukh09" target="_blank"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a class="footer-links" href="https://www.linkedin.com/in/mahesh-deshmukh-413830185/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </li>
+        </ul>
+        <p>© 2022 Orion store</p>
+      </footer>
+      <!-- --------------------------- -->
+    </div>
+
+    <a href="#" class="btn-floating btn-primary floating-up-arrow-btn">
+      <i class="fas fa-arrow-up" style="user-select: auto"></i>
+    </a>
+    <script src="products.js"></script>
+  </body>
+</html>
